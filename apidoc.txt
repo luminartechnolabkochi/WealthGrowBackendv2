@@ -1,3 +1,10 @@
+================api for creating a user account=================
+
+
+
+
+
+
 ======1)api for listing all transactions=====================
     url:http://127.0.0.1:8000/api/v1/transactions/
     method:get

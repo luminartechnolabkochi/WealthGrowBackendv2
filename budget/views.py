@@ -52,7 +52,7 @@ class TransactionSummaryAPIView(APIView):
         total_income = transactions.filter(type='income').aggregate(total_income=Sum('amount'))['total_income'] or 0
         
         category_summary = transactions.values('category').annotate(total_amount=Sum('amount')).order_by('category')
-        category_summary = {category['category']: category['total_amount'] for category in category_summary}
+        category_summary = list(category_summary)
         
         data = {
             'total_expense': total_expense,
@@ -60,5 +60,5 @@ class TransactionSummaryAPIView(APIView):
             'category_summary': category_summary
         }
         
-        serializer = TransactionSummarySerializer(data)
-        return Response(serializer.data)
+        # serializer = TransactionSummarySerializer(data)
+        return Response(data=data)
