@@ -1,0 +1,144 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "expense",
+    "dateExported": "2024-03-02T04:39:11.675Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "610c8fe2-3ab1-4e2b-8624-237270a9df04",
+            "colId": "ee61202e-084f-4280-a8f5-c028bd71e16a",
+            "containerId": "",
+            "name": "getallexp",
+            "url": "http://127.0.0.1:8000/api/v2/transactions/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-20T22:45:51.385Z",
+            "modified": "2024-03-01T14:37:18.957Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 8ab6a44a39531e76ed9cbe0a71e136002452bad9"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "98d22897-fc24-49af-bed8-ebbacbd4b3ca",
+            "colId": "ee61202e-084f-4280-a8f5-c028bd71e16a",
+            "containerId": "",
+            "name": "summary",
+            "url": "http://127.0.0.1:8000/api/v1/transactions/summary/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-28T21:55:33.235Z",
+            "modified": "2024-03-01T15:07:04.735Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 8ab6a44a39531e76ed9cbe0a71e136002452bad9"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3eea70cb-51d4-4e3e-a652-c77a51f306c7",
+            "colId": "ee61202e-084f-4280-a8f5-c028bd71e16a",
+            "containerId": "",
+            "name": "register",
+            "url": "http://127.0.0.1:8000/api/v2/register/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-01T14:29:54.598Z",
+            "modified": "2024-03-01T14:31:08.262Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "luminar"
+                    },
+                    {
+                        "name": "email",
+                        "value": "luminar@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "Password@123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c0bae7d7-0fad-488c-b5d8-bacfe8d9f557",
+            "colId": "ee61202e-084f-4280-a8f5-c028bd71e16a",
+            "containerId": "",
+            "name": "get token",
+            "url": "http://127.0.0.1:8000/api/v2/token/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-01T14:31:18.302Z",
+            "modified": "2024-03-01T14:31:57.202Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "luminar"
+                    },
+                    {
+                        "name": "password",
+                        "value": "Password@123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "12b457d7-8b87-4bf4-9d63-66f5a62a147a",
+            "colId": "ee61202e-084f-4280-a8f5-c028bd71e16a",
+            "containerId": "",
+            "name": "create transaction",
+            "url": "http://127.0.0.1:8000/api/v2/transactions/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-01T14:32:19.783Z",
+            "modified": "2024-03-01T14:36:38.405Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 8ab6a44a39531e76ed9cbe0a71e136002452bad9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "interest recied from fd"
+                    },
+                    {
+                        "name": "amount",
+                        "value": "6000"
+                    },
+                    {
+                        "name": "type",
+                        "value": "income"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
